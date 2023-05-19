@@ -1,0 +1,134 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom left, #79C7C5 40%, #c7f1f0 100%);
+    background-repeat: round;
+    overflow: hidden;
+}
+
+#back {
+    position:fixed;
+    left: 5%;
+    top: 5%;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    color : #F9FBFF;
+    opacity: 0.75;
+}
+
+#back:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+#card {
+    box-shadow: 5px 0px 15px rgba(119,119,119,0.7);
+    background-color: rgba(249,251,255,0.6);
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+#top-bar {
+    background: #F9FBFF;
+    border-radius: 20px 20px 0 0;
+}
+
+.mybtn {
+    background-color : #A1E2D9;
+    color: #F9FBFF;
+    border: 0;
+    padding: 1% 2%;
+    border-radius: 7px;
+}
+
+.mybtn:hover {
+    transform: scale(1.05);
+    transition: all .1s ease-in;
+}
+
+#chat-area {
+    overflow: auto;
+    overflow-x: hidden;
+}
+p {
+    min-width: 10%;
+    max-width: 55%;
+    word-wrap: break-word;
+}
+
+#bottom-bar {
+    background: #F9FBFF;
+    border-radius: 0 0 20px 20px;
+}
+
+input {
+    width: 90%;
+    border: 0;
+    background: transparent;
+}
+input::placeholder {
+    color: #6cc6c3;
+    font-size: large;
+}
+input:focus {
+    color: #777777;
+    outline: 0;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid #5c5c5c;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 2em;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: cursive;
+    text-align: center;
+    color: #5c5c5c;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+#req {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 45px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); 
+}
+
+.req-content {
+    color: #777777;
+    border-radius: 10px;
+    background-color: #F9FBFF;
+    opacity: 0.9;
+    margin: auto;
+    padding: 20px 50px;
+    border: 1px solid #888;
+    width: 65%;
+}
+
+@media(max-width: 1000px){
+    #back {
+        position: relative;
+    }
+    #body {
+        overflow:scroll;
+    }
+}
